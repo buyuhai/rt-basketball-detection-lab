@@ -1,0 +1,71 @@
+{
+  "task": "task01-flip-comparison",
+  "image": "dataset-curated/images/val/rt-225.jpg",
+  "flipped_image": "submission/task01/rt-225-flip.png",
+  "flip_method": "cv2.flip(image, 1)",
+  "device": "cpu",
+  "params": {
+    "imgsz": 640,
+    "conf": 0.1,
+    "classes": [
+      "sports ball"
+    ]
+  },
+  "original": {
+    "width": 360,
+    "height": 640,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          24.39,
+          156.21,
+          133.0,
+          265.45
+        ],
+        "class": "sports ball",
+        "confidence": 0.25133204460144043
+      }
+    ],
+    "top_center_xy": [
+      78.69,
+      210.83
+    ],
+    "elapsed_ms": 25.27,
+    "annotated_image": "submission/task01/rt-225-points.jpg"
+  },
+  "flipped": {
+    "width": 360,
+    "height": 640,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          227.55,
+          156.48,
+          336.28,
+          266.08
+        ],
+        "class": "sports ball",
+        "confidence": 0.2809206545352936
+      }
+    ],
+    "top_center_xy": [
+      281.91,
+      211.28
+    ],
+    "elapsed_ms": 24.28,
+    "annotated_image": "submission/task01/rt-225-flip-points.png"
+  },
+  "mirror_check": {
+    "expected_flipped_x": 281.31,
+    "actual_flipped_x": 281.91,
+    "delta_x": 0.6
+  },
+  "confidence_comparison": {
+    "original": 0.25133204460144043,
+    "flipped": 0.2809206545352936,
+    "equal": false,
+    "difference": 0.029589
+  },
+  "local_cue_note": "同一个卷积核在特征图上滑动，每个位置只对感受野内的局部像素做同一组加权求和；球翻到另一侧后，核在新位置提取镜像后的局部边缘和纹理线索。但卷积权重并非左右对称，翻转还会改变填充与网格对齐，所以两张有球图的最高分置信度不完全相同。",
+  "rerun": "cd /home/taozhengzhe/rt_vision/homework4/rt-basketball-detection-lab && .venv/bin/python submission/task01/task01.py"
+}

@@ -1,0 +1,40 @@
+{
+  "python_executable": "/home/taozhengzhe/rt_vision/homework4/rt-basketball-detection-lab/.venv/bin/python",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "device": "cpu",
+  "cuda_available": false,
+  "torch_cuda_build": null,
+  "packages": {
+    "torch": {
+      "installed": "2.6.0+cpu",
+      "imported": "2.6.0+cpu"
+    },
+    "torchvision": {
+      "installed": "0.21.0+cpu",
+      "imported": "0.21.0+cpu"
+    },
+    "ultralytics": {
+      "installed": "8.3.232",
+      "imported": "8.3.232"
+    },
+    "opencv-python": {
+      "installed": "4.11.0.86",
+      "imported": "4.11.0"
+    },
+    "numpy": {
+      "installed": "1.26.4",
+      "imported": "1.26.4"
+    },
+    "onnx": {
+      "installed": "1.19.1",
+      "imported": "1.19.1"
+    },
+    "onnxruntime": {
+      "installed": "1.32.0",
+      "imported": "1.32.0"
+    }
+  },
+  "yolo_cli": "/home/taozhengzhe/rt_vision/homework4/rt-basketball-detection-lab/.venv/bin/yolo",
+  "rerun": "cd /home/taozhengzhe/rt_vision/homework4/rt-basketball-detection-lab && .venv/bin/python submission/task01/task01.py"
+}

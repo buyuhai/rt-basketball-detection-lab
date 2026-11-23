@@ -1,0 +1,146 @@
+{
+  "task": "task02-cvat-yolo-annotation-check",
+  "archive": {
+    "path": "submission/task02/cvat-ultralytics-yolo.zip",
+    "sha256": "a1656280f89609abac5e617664d426d3aa66e32163b5374de1a437f9d13d38dc",
+    "format": "CVAT Ultralytics YOLO Detection",
+    "images_in_archive": true
+  },
+  "data_yaml": {
+    "names": {
+      "0": "basketball"
+    },
+    "path": ".",
+    "train": "train.txt"
+  },
+  "class_map": {
+    "0": "basketball"
+  },
+  "images": [
+    {
+      "filename": "rt-125.jpg",
+      "source": "dataset-curated/images/val/rt-125.jpg",
+      "width": 360,
+      "height": 640,
+      "has_label": true,
+      "label_state": "present",
+      "label_file": "labels/train/rt-125.txt",
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "basketball",
+          "yolo_cxcywh": [
+            0.298611,
+            0.56875,
+            0.330556,
+            0.190625
+          ],
+          "pixel_xyxy": [
+            48.0,
+            303.0,
+            167.0,
+            425.0
+          ]
+        }
+      ],
+      "reference_xyxy": [
+        48,
+        303,
+        167,
+        425
+      ],
+      "reference_iou": 1.0
+    },
+    {
+      "filename": "rt-150.jpg",
+      "source": "dataset-curated/images/val/rt-150.jpg",
+      "width": 360,
+      "height": 640,
+      "has_label": true,
+      "label_state": "present",
+      "label_file": "labels/train/rt-150.txt",
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "basketball",
+          "yolo_cxcywh": [
+            0.043056,
+            0.461719,
+            0.086111,
+            0.151562
+          ],
+          "pixel_xyxy": [
+            0.0,
+            247.0,
+            31.0,
+            344.0
+          ]
+        }
+      ],
+      "reference_xyxy": [
+        0,
+        247,
+        31,
+        344
+      ],
+      "reference_iou": 1.0,
+      "restored_image": "submission/task02/rt-150-restored.png"
+    },
+    {
+      "filename": "rt-200.jpg",
+      "source": "dataset-curated/images/val/rt-200.jpg",
+      "width": 360,
+      "height": 640,
+      "has_label": false,
+      "label_state": "missing",
+      "label_file": null,
+      "boxes": []
+    },
+    {
+      "filename": "plos02-055.jpg",
+      "source": "dataset-curated/images/train/plos02-055.jpg",
+      "width": 1920,
+      "height": 1080,
+      "has_label": true,
+      "label_state": "present",
+      "label_file": "labels/train/plos02-055.txt",
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "basketball",
+          "yolo_cxcywh": [
+            0.576302,
+            0.553241,
+            0.035937,
+            0.063889
+          ],
+          "pixel_xyxy": [
+            1072.0,
+            563.0,
+            1141.0,
+            632.0
+          ]
+        }
+      ],
+      "reference_xyxy": [
+        1072,
+        563,
+        1141,
+        632
+      ],
+      "reference_iou": 1.0,
+      "restored_image": "submission/task02/plos02-055-restored.png"
+    }
+  ],
+  "restored": [
+    {
+      "image": "rt-150.jpg",
+      "restored_image": "submission/task02/rt-150-restored.png"
+    },
+    {
+      "image": "plos02-055.jpg",
+      "restored_image": "submission/task02/plos02-055-restored.png"
+    }
+  ],
+  "rerun": "cd /home/taozhengzhe/rt_vision/homework4/rt-basketball-detection-lab && .venv/bin/python submission/task02/restore_boxes.py"
+}

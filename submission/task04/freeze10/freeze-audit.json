@@ -1,0 +1,24 @@
+{
+  "freeze": 10,
+  "frozen_layer_prefixes": [
+    "model.0.",
+    "model.1.",
+    "model.2.",
+    "model.3.",
+    "model.4.",
+    "model.5.",
+    "model.6.",
+    "model.7.",
+    "model.8.",
+    "model.9."
+  ],
+  "always_frozen": [
+    ".dfl"
+  ],
+  "total_parameters": 2590035,
+  "frozen_parameters": 1115760,
+  "trainable_parameters": 1474275,
+  "frozen_fraction": 0.43079,
+  "frozen_tensor_count": 100,
+  "source": "runs/task04/freeze10/weights/best.pt (nc=1)"
+}

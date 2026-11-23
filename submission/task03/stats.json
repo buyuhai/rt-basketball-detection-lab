@@ -1,0 +1,49 @@
+{
+  "weights": "yolo11n.pt",
+  "split": "val",
+  "match_iou": 0.5,
+  "annotation_source": "annotations.csv",
+  "settings": [
+    {
+      "id": "A",
+      "imgsz": 640,
+      "conf": 0.1,
+      "ball_matches": 4,
+      "ball_total": 12,
+      "edge_matches": 1,
+      "edge_total": 2,
+      "regular_matches": 3,
+      "regular_total": 10,
+      "empty_false_alarms": 0,
+      "empty_total": 2
+    },
+    {
+      "id": "B",
+      "imgsz": 320,
+      "conf": 0.1,
+      "ball_matches": 3,
+      "ball_total": 12,
+      "edge_matches": 0,
+      "edge_total": 2,
+      "regular_matches": 3,
+      "regular_total": 10,
+      "empty_false_alarms": 0,
+      "empty_total": 2
+    },
+    {
+      "id": "C",
+      "imgsz": 320,
+      "conf": 0.25,
+      "ball_matches": 2,
+      "ball_total": 12,
+      "edge_matches": 0,
+      "edge_total": 2,
+      "regular_matches": 2,
+      "regular_total": 10,
+      "empty_false_alarms": 0,
+      "empty_total": 2
+    }
+  ],
+  "recommendation": "Keep 640/0.10 if preserving edge balls is the priority. If 320 is required, use 0.10, not 0.25: 0.25 loses frame 275 without recovering edge balls or reducing empty-frame false alarms.",
+  "rerun": "cd /home/taozhengzhe/rt_vision/homework4/rt-basketball-detection-lab && .venv/bin/python submission/task03/make_report.py"
+}

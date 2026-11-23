@@ -1,0 +1,34 @@
+{
+  "weights": "yolo11n.pt",
+  "split": "val",
+  "imgsz": 640,
+  "conf": 0.25,
+  "match_iou": 0.5,
+  "groups": {
+    "full": {
+      "weights": "runs/task04/full/weights/best.pt",
+      "ball_matches": 0,
+      "ball_total": 12,
+      "edge_matches": 0,
+      "edge_total": 2,
+      "regular_matches": 0,
+      "regular_total": 10,
+      "empty_false_alarms": 0,
+      "empty_total": 2,
+      "extra_boxes": 0
+    },
+    "freeze10": {
+      "weights": "runs/task04/freeze10/weights/best.pt",
+      "ball_matches": 0,
+      "ball_total": 12,
+      "edge_matches": 0,
+      "edge_total": 2,
+      "regular_matches": 0,
+      "regular_total": 10,
+      "empty_false_alarms": 0,
+      "empty_total": 2,
+      "extra_boxes": 0
+    }
+  },
+  "decision": "Cannot judge from the current evidence: both groups have zero matched ball frames at the fixed setting. Freeze10 has lower epoch-5 validation box/dfl loss but no detection above conf 0.001, so that is not a usable detection advantage."
+}

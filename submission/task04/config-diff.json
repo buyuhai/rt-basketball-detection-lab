@@ -1,0 +1,31 @@
+{
+  "same": {
+    "batch": 8,
+    "data": "data.yaml",
+    "deterministic": true,
+    "device": "cpu",
+    "epochs": 5,
+    "exist_ok": true,
+    "imgsz": 416,
+    "lr0": 0.001,
+    "mixup": 0.0,
+    "mosaic": 0.0,
+    "optimizer": "AdamW",
+    "plots": false,
+    "project": "runs/task04",
+    "scale": 0.2,
+    "seed": 42,
+    "weights": "yolo11n.pt",
+    "workers": 0
+  },
+  "different": {
+    "freeze": [
+      0,
+      10
+    ],
+    "name": [
+      "full",
+      "freeze10"
+    ]
+  }
+}

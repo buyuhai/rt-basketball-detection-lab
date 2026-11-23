@@ -1,0 +1,45 @@
+{
+  "task": "task01-first-inference",
+  "image": "dataset-curated/images/val/rt-100.jpg",
+  "frame": 100,
+  "width": 360,
+  "height": 640,
+  "weights": {
+    "path": "yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+  },
+  "device": "cpu",
+  "params": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "classes": [
+      "sports ball"
+    ]
+  },
+  "detections": [
+    {
+      "bbox_xyxy": [
+        139.41,
+        390.48,
+        260.47,
+        516.74
+      ],
+      "class": "sports ball",
+      "confidence": 0.5129060745239258
+    }
+  ],
+  "top_center_xy": [
+    199.94,
+    453.61
+  ],
+  "annotation_xyxy": [
+    136,
+    395,
+    255,
+    515
+  ],
+  "top_iou": 0.8838,
+  "elapsed_ms": 81.4,
+  "annotated_image": "submission/task01/rt-100-prediction.jpg",
+  "rerun": "cd /home/taozhengzhe/rt_vision/homework4/rt-basketball-detection-lab && .venv/bin/python submission/task01/task01.py"
+}

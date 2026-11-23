@@ -1,0 +1,28 @@
+{
+  "task": "task05-independent-test",
+  "weights": "yolo11n.pt",
+  "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "annotations": "annotations.csv",
+  "annotations_sha256": "336bcec3dafc5ded5bf163c6ffec5573409b3fd2b5e2de99586a31914b4240bf",
+  "split": "test",
+  "test_source": "jackson",
+  "test_frames": [
+    3,
+    11,
+    19,
+    27,
+    35,
+    43,
+    51,
+    59
+  ],
+  "imgsz": 416,
+  "conf": 0.1,
+  "match_iou": 0.5,
+  "classes": [
+    "sports ball"
+  ],
+  "device": "cpu",
+  "fixed_before_eval": true,
+  "command": ".venv/bin/python lab.py eval --split test --weights yolo11n.pt --imgsz 416 --conf 0.10 --output runs/task05/jackson-416-conf010.jsonl"
+}

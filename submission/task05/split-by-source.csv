@@ -1,0 +1,9 @@
+source,split,frames,frame_list,ball_frames,empty_frames,note
+jackson,test,8,003 011 019 027 035 043 051 059,7,1,Jackson 罚球录像，全部测试
+plos01,train,3,029 042 068,3,0,PLOS 研究录像，全部训练
+plos02,train,6,003 016 055 068 081 094,4,2,PLOS 研究录像，全部训练
+plos03,train,7,003 016 029 055 068 081 094,7,0,PLOS 研究录像，全部训练
+plos06,train,5,003 029 042 055 094,4,1,PLOS 研究录像，全部训练
+plos07,train,5,042 055 068 081 094,5,0,PLOS 研究录像，全部训练
+plos09,train,7,003 016 029 042 055 068 081,7,0,PLOS 研究录像，全部训练
+rt,val,14,000 025 050 075 100 125 145 150 180 200 225 250 275 300,12,2,RT 练习视频，全部验证

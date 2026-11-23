@@ -1,0 +1,13 @@
+{
+  "freeze": 0,
+  "frozen_layer_prefixes": [],
+  "always_frozen": [
+    ".dfl"
+  ],
+  "total_parameters": 2590035,
+  "frozen_parameters": 16,
+  "trainable_parameters": 2590019,
+  "frozen_fraction": 6e-06,
+  "frozen_tensor_count": 1,
+  "source": "runs/task04/full/weights/best.pt (nc=1)"
+}

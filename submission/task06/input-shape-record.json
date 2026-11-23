@@ -1,0 +1,45 @@
+{
+  "imgsz": 416,
+  "conf": 0.1,
+  "rect": false,
+  "classes": [
+    "sports ball"
+  ],
+  "pytorch_input_shapes": [
+    [
+      1,
+      3,
+      416,
+      416
+    ],
+    [
+      1,
+      3,
+      416,
+      416
+    ],
+    [
+      1,
+      3,
+      416,
+      416
+    ]
+  ],
+  "onnx_input_shape": [
+    1,
+    3,
+    416,
+    416
+  ],
+  "onnx_input_name": "images",
+  "onnx_input_type": "tensor(float)",
+  "expected_shape": [
+    1,
+    3,
+    416,
+    416
+  ],
+  "match": true,
+  "preprocessing": "Both backends use the same Ultralytics predictor path with imgsz=416 and rect=False; images are letterboxed with the same scale and padding by compare_onnx.py, so boxes are mapped back to original image coordinates.",
+  "source": "submission/task06/backend-comparison.json"
+}

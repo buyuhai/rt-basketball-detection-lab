@@ -1,0 +1,9 @@
+frame,time_s,group,annotation_xyxy,detection_count,detections,best_iou,matched,status,extra_boxes,needs_review
+3,0.1042,small,"[584, 785, 694, 887]",0,[],0,False,有球漏检,0,True
+11,0.3819,small,"[626, 1139, 720, 1233]",0,[],0,False,有球漏检,0,True
+19,0.6596,small,"[605, 875, 707, 969]",0,[],0,False,有球漏检,0,True
+27,0.9374,small,"[631, 879, 733, 981]",0,[],0,False,有球漏检,0,True
+35,1.2151,small,"[694, 811, 805, 896]",1,"[{""bbox_xyxy"": [35.91853713989258, 1321.7108154296875, 97.29622650146484, 1394.7572021484375], ""class"": ""sports ball"", ""confidence"": 0.2767559587955475}]",0.0,False,有球漏检 + 多余框,1,True
+43,1.4929,small,"[648, 495, 767, 597]",0,[],0,False,有球漏检,0,True
+51,1.7706,edge,"[767, 0, 852, 73]",0,[],0,False,有球漏检,0,True
+59,2.0484,empty,[],0,[],0,False,空帧正确,0,False

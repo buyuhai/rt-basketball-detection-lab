@@ -1,0 +1,30 @@
+{
+  "weights": "yolo11n.pt",
+  "imgsz": 416,
+  "conf": 0.1,
+  "split": "test",
+  "match_iou": 0.5,
+  "groups": {
+    "small": {
+      "frames": 6,
+      "hits": 0,
+      "misses": 6,
+      "false_alarm_frames": 0,
+      "extra_boxes": 1
+    },
+    "edge": {
+      "frames": 1,
+      "hits": 0,
+      "misses": 1,
+      "false_alarm_frames": 0,
+      "extra_boxes": 0
+    },
+    "empty": {
+      "frames": 1,
+      "hits": 0,
+      "misses": 0,
+      "false_alarm_frames": 0,
+      "extra_boxes": 0
+    }
+  }
+}

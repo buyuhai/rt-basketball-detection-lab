@@ -1,0 +1,122 @@
+{
+  "total_frames": 55,
+  "split_counts": {
+    "train": 33,
+    "val": 14,
+    "test": 8
+  },
+  "sources": [
+    {
+      "source": "jackson",
+      "split": "test",
+      "frames": 8,
+      "frame_list": "003 011 019 027 035 043 051 059",
+      "ball_frames": 7,
+      "empty_frames": 1,
+      "note": "Jackson 罚球录像，全部测试"
+    },
+    {
+      "source": "plos01",
+      "split": "train",
+      "frames": 3,
+      "frame_list": "029 042 068",
+      "ball_frames": 3,
+      "empty_frames": 0,
+      "note": "PLOS 研究录像，全部训练"
+    },
+    {
+      "source": "plos02",
+      "split": "train",
+      "frames": 6,
+      "frame_list": "003 016 055 068 081 094",
+      "ball_frames": 4,
+      "empty_frames": 2,
+      "note": "PLOS 研究录像，全部训练"
+    },
+    {
+      "source": "plos03",
+      "split": "train",
+      "frames": 7,
+      "frame_list": "003 016 029 055 068 081 094",
+      "ball_frames": 7,
+      "empty_frames": 0,
+      "note": "PLOS 研究录像，全部训练"
+    },
+    {
+      "source": "plos06",
+      "split": "train",
+      "frames": 5,
+      "frame_list": "003 029 042 055 094",
+      "ball_frames": 4,
+      "empty_frames": 1,
+      "note": "PLOS 研究录像，全部训练"
+    },
+    {
+      "source": "plos07",
+      "split": "train",
+      "frames": 5,
+      "frame_list": "042 055 068 081 094",
+      "ball_frames": 5,
+      "empty_frames": 0,
+      "note": "PLOS 研究录像，全部训练"
+    },
+    {
+      "source": "plos09",
+      "split": "train",
+      "frames": 7,
+      "frame_list": "003 016 029 042 055 068 081",
+      "ball_frames": 7,
+      "empty_frames": 0,
+      "note": "PLOS 研究录像，全部训练"
+    },
+    {
+      "source": "rt",
+      "split": "val",
+      "frames": 14,
+      "frame_list": "000 025 050 075 100 125 145 150 180 200 225 250 275 300",
+      "ball_frames": 12,
+      "empty_frames": 2,
+      "note": "RT 练习视频，全部验证"
+    }
+  ],
+  "one_source_per_split": true,
+  "teammate_split_issues": [
+    {
+      "frame": "rt-125",
+      "wrong_split": "train",
+      "correct_split": "val",
+      "crossing": "RT 来源同时出现在 train 和 val"
+    },
+    {
+      "frame": "jackson-011",
+      "wrong_split": "val",
+      "correct_split": "test",
+      "crossing": "Jackson 来源同时出现在 val 和 test"
+    }
+  ],
+  "corrected_grouping": {
+    "rt": {
+      "split": "val",
+      "frames": 14
+    },
+    "jackson": {
+      "split": "test",
+      "frames": 8
+    },
+    "plos": {
+      "split": "train",
+      "frames": 33
+    }
+  },
+  "teammate_split_counts": {
+    "train": 34,
+    "val": 14,
+    "test": 7
+  },
+  "corrected_split_counts": {
+    "train": 33,
+    "val": 14,
+    "test": 8
+  },
+  "no_source_crossing_in_corrected_split": true
+}
